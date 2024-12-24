@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "jailhelper",
+	"version": "${version}",
+	"name": "jailhelper",
+	"description": "AutoToken fabric mod for craftplay.pl Jail Server",
+	"authors": [
+		"Refil <3"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/vRefilv/autotoken"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/jailhelper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.jailhelper.JailhelperClient"
+		]
+	},
+	"mixins": [
+		"jailhelper.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
